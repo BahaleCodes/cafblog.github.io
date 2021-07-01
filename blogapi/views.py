@@ -10,7 +10,7 @@ class BlogViewSet(viewsets.ModelViewSet):
     queryset = Blog.objects.all()
     serializer_class = BlogSerializer
     authentication_classes = (TokenAuthentication, )
-    permission_classes = (IsAuthenticated, )
+    # permission_classes = (IsAuthenticated, )
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
