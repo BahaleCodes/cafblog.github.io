@@ -58,6 +58,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://jaysweb.herokuapp.com",
+    "http://localhost:3000",
+]
+
 ROOT_URLCONF = 'blogsite.urls'
 
 TEMPLATES = [
